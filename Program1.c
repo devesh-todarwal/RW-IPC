@@ -44,12 +44,10 @@ int main(void)
     semaphore_id = sem_open("/program_sem", O_CREAT, S_IRUSR | S_IWUSR, 1);
     sem_post(semaphore_id);
     
-    //if the line contains the secret code "C00L".
-    //sends this information to the the shared memory
     while(1)
     {
         //get alpha numeric strings as input from the user
-        //wiht
+        //wait
         sleep(2);
         
         //read command line input 
